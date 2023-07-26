@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    --Linear-Gradient: #a3a8f0 to #696fdd;
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Very-Light-Grayish-Blue);
+    margin: 40px;
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-top{
+    right: 0;
+    top: 0;
+}
+
+.bg-bottom{
+    left: 0;
+    bottom: 0;
+}
+
+.dark-grayish-text{
+    color: var(--Dark-Grayish-Blue);
+}
+
+.grayish-text{
+    color: var(--Grayish-Blue);
+}
+
+.very-light-grayish-text{
+    color: var(--Very-Light-Grayish-Blue);
+}
+
+.main-title{
+    text-align: center;
+    margin: 15px;
+}
+
+.toggle-container{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.toggle-btn{
+    width: 3rem;
+    padding: .2rem;
+    background: rgb(163,168,240);
+    background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+    border-radius: 20px;
+    border: none;
+}
+
+.toggle-btn:hover{
+    cursor: pointer;
+    background-color: var(--Light-Grayish-Blue);
+    background: var(--Light-Grayish-Blue);
+}
+
+.btn-circle{
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.toggle-text{
+    color: var(--Light-Grayish-Blue);
+}
+
+.main-cards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-card{
+    padding: 25px;
+    background-color: white;
+    width: 350px;
+    padding-bottom: 20px;
+    height: 420px;
+    margin-top: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.fst-card{
+    border-radius: 10px 0 0 10px;
+}
+
+.third-card{
+    border-radius: 0 10px 10px 0;
+}
+
+.main-card.snd-card{
+    background: rgb(163,168,240);
+background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+border-radius: 10px;
+height: 460px;
+margin-top: 0;
+padding-top: 45px;
+}
+
+
+
+.plan-type{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-price{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.money{
+    font-size: 35px;
+}
+
+.li-item{
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid var(--Light-Grayish-Blue);
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+    font-size: 15px;
+}
+
+.card-btn{
+    margin-top: 35px;
+    width: 100%;
+    text-align: center;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background: rgb(163,168,240);
+    background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+    color: var(--Very-Light-Grayish-Blue);
+    border: 1px solid transparent;
+}
+
+.card-btn:hover{
+    cursor: pointer;
+    border: 1px solid #696fdd;
+    color: #696fdd;
+    background-color: var(--Very-Light-Grayish-Blue);
+    background: var(--Very-Light-Grayish-Blue);
+}
+
+.main-card.snd-card .card-btn{
+    background: var(--Very-Light-Grayish-Blue);
+    background-color: var(--Very-Light-Grayish-Blue) !important;
+    color: #696fdd;
+}
+
+.main-card.snd-card .card-btn:hover{
+    cursor: pointer;
+    background: rgb(163,168,240);
+    background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+    border: 1px solid var(--Very-Light-Grayish-Blue);
+    color: var(--Very-Light-Grayish-Blue);
+}
+
+.btn-circle.anually{
+    margin: 0;
+    margin-right: auto;
+}
+
+@media (max-width:375px) {
+    .bg{
+        display: none;
+    }
+    body{
+        margin: 30px 20px;
+    }
+    .main-title{
+        margin-bottom: 20px;
+    }
+    .main-cards{
+        flex-direction: column;
+    }
+    .main-card{
+        width: 100% !important;
+        margin: 0;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
